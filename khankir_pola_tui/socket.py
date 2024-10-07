@@ -1,4 +1,981 @@
-# Encoded By : Mr Dark 
-# Encryption : Py3 Lambda
-# Py3 Version : 3.11
-_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(b'==AESwupH8v72x++3vTbOOPAmvV4EEyxYZbhemKu33xcGUglRhrF2X3zZ+tCutZvzMsmoTkKYbGcUB8tkPcP52D2bBHKQsNn30Nuu5Ngfr/1enantEDDoDtJFEprxxuP5qPBHTcjSPpdUBcu26AaB8WGk2g9S2TTvhaZLMFLOvm51XMM808pMbNfMfm9cV9YcouXSvtpF0avrr61Lx0A6sS+ZuoHyzzr3ezb7MG7APrrZ1JcM/pLvgyd2EJ3Wf0cZ03/twhVzGgsVPZBx/UE6WenXzgrMbp76S3YCY8yeJzQ+JTanlztUT6uLmhq0RGjBoW2CmtIvmChjLghcL7Gwlc7OhR33VidX3FmLP1g2oV8jlm0+hB3+rwYuznbHm8P6HN0Us3CxY9CBwi/YSmcb2ufZSaDNW/hu1WP5yq9mPzeLPxsELs+sL8+XVXaTnFSAjqD0RrgKvVQoleZtD4ybJYrtweuzqsybvV2vZ0trLYNt2C7nCaV6dLtZx6uzq8ybHUZjyMrgu2yuwhELvrpsSrfVYpDDUVFVefulNoPl1Y9sXatqr8mCgKIVtRQpJo8vyyoxWWlOIhs+7slfBtKd/pMx6slShdF2A8q2QnsuCMqMIB0MgKYUZsgLbQBPBrK9EIUYUhT9zVy5DPPAMU9AAKOVEz/5MV+7jTAbzv5PdOzgbQ7wXgNtzVi8//7l44191OXxqt5nypjZb2ExAvLZJQ4ZmtWrvYdXHB8Xzih4WW1Fv7qI+f7P3GmIPtmrBFLtjlKr2l1znZz6N9Vktruk2FHAtLtM6m0wc42KpBRGm6FHBRKtPyB0yoL7nWXkmU+jYRcErAcZ8812hz2f0p9TvD7nTKYbkdypa5W10ObyAPVZr5UmlVTYaGD1j5MGjW5sJkASd3TpV9s1L0+jZT7aefNXalIrPTBcddzqndzqn5orOK6GEQeuorrrVzwjxqhHnRXrwepXziNNFuzLVz17lVXsbmwwyrsZ3GpeSf7IrW0gxfYaff9BGdTsFlUbkzOfSanvu3MTuFHMbh+XxU6O+Wm/VKtN3r+0qLmkzva1+MWl5IfoDjLrNRfCmNZtBWGh+B/v6b6j5hlcYlfhFzy+v/CwHEwsHFEO+tD0q6ohcTWVFW7isWKbh8eoohOhQcUsYfi9eOJowBiSA1EsAE4xwgHQXjti4AhBNIEkLUYxmqxJFq3zR3oTkmH5kQJysQwvpi+VtNzeQJZ/7cg/PZ5R9wF9NAuU4w85C7hHgEpQAB8SCvaZs5xZ4jKeD19SZYG0yTWJQiYSUvs6gFx/Np0gE3lj3F5AIkBiTIoxkwVMKSzfAw/qojpVxHn1tvEbgUPVZE2TM6LTBDE+hqwG+vESapDFKVTvufcV64qdDhNKuwYoNqNa+PgtVtjr0eTyZ0mk1INP/xtYHO4Xb4mn1ANK763juajmOK/W59L2BK5VgTh1q34Oq3zcEPn589Ae7/My1rWV7xFvhA8Wf8aa7dokU0d08y1Y8vOjI5LXrEGRxY3rUZAJT0o6ggzCmIApHAWQH72InEGNCjcaRSU3FQQFBhRidEwOF1HpBS8hTuuWJQOIIaTAklAmji/h/SM+B+Oot3+Q38DrPCptgX1dlioXFmWT7TkaAL53TK15tNqWSjo5ALYwq4wNgBJJKCEkgp2xL66MDNcBmtSp6hovWb0a6BHaiR4DS0JHs2jOdk4cYdqQvWHuqiE5hjHnE+3AQYimb8rknhfGCUoBW5QZlihGgqiMZB6K1LHToOKqdqvaSmU4HaRZc41+wjYv/atCyZgnTZwd/hkEiZudkGUeJuoD0uSA1lrkZgbYD7g9jsZ8SVVi4SVfKyLdVsuUZUf6CaRIXKS5jYryMSlT6IGQwllYJLtsUXNKUAJura67F24bGgubJdzrXBPYXeHWAFZU2Zug0DJpZNH4zAKMtTHFvfybqhYUflqOna7fcSTEVkL0Imm1O8ehoet6MC4i8i1GNkuVwO2lHBnQcni3lzKJMRjFTbpsYGuMNuyZYcfj5ZIISHjxfqrCfHF0nS9Vy6JhThZ4TwGPeEmGTFt3IMkrWOhOmvqCtte3XoSl9lO3xhK7OlJ6Ntcz9Bww8H/FMr3Qg1d3zdHRefT+t/hyyj5f33IV4b+Nio71erve8AtjB7i7ME+CoG07PIkz/LeF9Is89c3c4Oa+AWHfU3DvrDGBsvWGl6bRGwVz65hedTezr78nuIe64SqPo9Lus2OoKG5zb3n3k18xZpyjl+tCMp+zq3Irr+UsNnfRXVvaTl6f3Gb+qdmtXpjbwtUbo2TQL/ff5FiHAeLJB/ytu8/a0uzKuNHhHf0mwBDXQ9yUtdHxCaZx3VuwjDF3pPyvH/l+c1Rbu8f1EetNXk3vQU2Yx23ao218p5X7Z9X7Z8avpnXv5upqNcVNTXYAMOdBacr/bn+KDH6Md4yae/e06+9Z1t7zY4b6+W8sT3qs68Tc1yASjCjbE1mtQN1KfsO1Jmio8Ofa+3ds6/7Z05ekPvf29tRlzSX6Zk2wC9W9S2t49cablGv2MfX43FpPcjSs/2q4+Mx+n6ZUHMWaf/qs6trzsxmAjHxj6+0HV7sHVrMHFyIMphh8twDK0n2UZvtUZvpkx/g0NRYb140Wf3TZ0ZP8bwwwpe2N/hta6Tra6TqSqjbY2tVzquXzzm3zzU4V7b7vPbfMKXynwrdyYfSCbSTFngFnR1qkQeZaN+IA+lzI+Xz9IF5tdAQeqPOnTkHOqsdC86NRRY7UBNcJGXjwpCjBusTmbqOQYykYWZapTH5mMGjXz2gKK2U4cUOIIeIYQoJ4l9G0Xn6EwUDC+/vKbIK5hRQ8Ell28pveVMrprg6R8bLGdfsMwObkBnltIRIhpnvd+2MrjWSw4RESfqYNyMC5nY8lEdJ9hOt97qxNVM8FmZX4F8p0RjbucQfuNfMhvylvlgEVtbklRXzqP4lUuf+1cmoVtq+y4EkMEowFmnBMEBvXuL6sKDAHUgsZ/2dkvx6v/u6dhQuQkoUTiFxDP8wtJNgJ7PdIlM4KQNtyq6uAkGCJiCxNSHVFvihKzWvV+itIxrkBVisVxO+R29wE/5FC2MSuHkmVTJ+te9XEJzu84yTqhcAliRN6pBUHWKHxxFtq5hiCJTleME+iE3I9/1Ku8+VxHH9Z9CY5hEjGkIZXpzSaM1MJnO82D3POc2QncGMxTtcIppXUP8xMhoXBUt4o4BReyqyqWSjRjb7WBlVDAonusKC8Ss91PjUYhSDyqbIAP9FiqOLaFCGjyuzAOuuoeQJgJGpOabHkZie3J76y3c4uocRh1pJWsklIQIOua62Z4F7n+T4VDVLtKhrQVqKqfV/eIq1xEPdUD7Kxob8Sn5Xin86mqkDtSXwLlrKomEr1DFveRsoahd7sEEgP3kkz30+e2FeSg7Ki8v9a3SY1I5/KVvl3d0HT8y7brytkKg1Vpc9B+21xUSnxoL0SrTNJDmtrPxoW5VyL/KM1pNndvGr6zQdynafkGba6VYvfwjtR70jUefnJFM/BtlLnOE+ISliWFsQC8OW5kpUcL2Bt1SWJAktrPWphxFsAdaU9ZCGxpWCxwiUfvaPW1bX1JXn+7quai9nr2BvcvbesAdkqeS62ZpaNMzTl3mORtVHDk0geQ65KrVm3GXT04kABRzokuU6WiWGOBgWuGFRCdi5k8eI2ZTa9xzIQKXGHQFsY0gdn6GwNC7irMA+D44Atz5oMfgwXYj/3DA57dqvzfTUm3++gRkfbB4sCI6hc+5xc2ZFUriwrOR4e8eW4oz6+xwZ/oTMzjYknggFLEKM94u071NZ3jLyfeTjNnPPffy1T6NnFc1GYcGg1sFIqZqUzvHHvy3qxLQyCmfy1hv6DCOLVYr+L3W8VmT8JkP84cht6/cbxHpM1y93amfrVv+DfcbdRgMd7Z8UuEU1qtoU010+SDsIbUWWH9CxRItvsgRz6R2rmi6wV4/YPaxaPQkM7mJF5EW8QcSAT1XRIgPfc6UTO8wQ05i8HeQ64Ddypmcm0rvf94dQsWeWhANFzA/83AO7ve649bmSKXM+xOP62VfUwsDFRU+FaLYo+DR1EogqKSTlUNzLLBtiLK+2hEXn50fWz8TZj+A6CRcMn1Xc901EFYOyKjtyRqFeOosfLQAYo3ZsrUNYUcKqN/7QKU2TcTS7Y1a9HmT6SebR6OA3ZLDMzIJzudLVBybJJo/aQPsnAK9faVvI2sU2K1IAlZQc2d867cHzdOWztd3wAbrbf0ymDhtRE8BL7Mkzdcw0OEtlI7O9YH1kioZNs5e9M56/p13qEU9HK7HUVzlmoOm7Sfctyectyc+efPnu8V7ad37pvcpmVmv6kTf2oYXrU4B2YA/Z5a+ff2bydhdzS5H/cAJXV4/o+yevZ7H6+K3X4IFwp3eIM9br5kVsOgpc7unStv+K3yY+59W5k/nNz3J3k+IndWBtxlGmQ9kznD+TnMFwyPqk67+2W7+0bpbzuNuNqSW/5hTLaCg3SbQ9QeDjBD1AUZgOV1wpciYr0gNry7Ve808Fgbfmfr2P1ztLg47sFEvkVHXdro6UfVjtO2L4c9gExf1hpuYLPWCNQ6jxLl2tukEO5Q0hGXAbKQqbvlY5/p4xqZ36OsTXxv6kZzSb+9znNV7MAvrUmxpA1tlkZuRXvhXOJWHT5YS4uUDqKguDZo6pxw9BOsTezI8mITEHzX5XUNFsYyCd5oMphQKQ4otv7F5E6gESwfxabYV+oppMQpSI2Wkb+RUnFtwB9yCsoft8MGWSM9wkDnK+UbP4VHykRGdyJjO6DVkIdSiaayqi3GARkIhkMX2G0KQVIHJo5tBxs31BvsEudLdELhE20GfPV0aPMBYprQZbuX1m82NPYX6RaPUkCFG/j6G1DFv0swK8RCMtViuiVAaEmnSOMYjaNJCyJK8bBgVjT6E6PcRXV6yHosAB/gcLUza/KMvDi9sJXAMbYK63GyMIWd00kTyt6FhjX+Ux3oyXOw1GKlg2rlSh3irlsKYAoN2DHsoLnJq0K1Wp2FNVAzq2TETv8hl3itjWCpxGTPRFj0OeBMOQ9Rn8TJTs3XbjLmdtux5b4hQLJzF1efXUNH25jZ2FagkHZREb77myGJm9g8QYSVblM1kkhZT5K5L8ndBnpBS8YOKZVNTPVLcUGyBrAiN1KXt4BKYPUaABS+cDt+mTsXxWrZ8nP/BmB/gZW1zjDUsKkWxBYb2Iec8wgzB/4b62+FW/yl3dI27tUoPSjckMX7YVqCRnSWpIlOQ1biCD9iEnNoceSAjlCMSNLnDNoLFtVn777W2n9B4y4xUuDWB2f8dcspAsem9IlDqdUSkmWmAzrjY3ocL9SfT1TXfQ0LCNcv7NxFl6fwL+1Ve1TI+9VyKdXvLIACenUFbO2FwYWA/eqg1mOlyjYGzeWjpsuj/8doGvnxHsAJ7uSYCwta5wQz16VJh6V6pf/4HrSsai2vEOIFeP5amGM0UCCytl56iBqLq1/BSLIsPrAnoK00qfL6V0bSA61Q2sCUukz3UXQyPbS51g0XtlG/hJyCG1CdAWb5F8HhLLN1v7BNSn7cfm6Y0+vibtGJkd8W6CStdIUdb8acCFQTXVSN8noxdYp6zd7A5hgXIA0KUrFQo3g7wlAKb7PlzYSG3KJxkgf7Mzi6fqTIf96pfo9FO04Ug2XytvSf1eZ0ths7+wmd0c2hdbuSLtkH8cJBQ9jTz8dhffmywtI9eL1KZccDeM1+/Y/99n7tu3CXP/HUO/QUsv/iI31t0pETOoDlLHIbr85UqNIX72PTJ4fD0HwwpULqCJrlHMQrsvApJgLJXO1rB8blMYww2FpvEZ9690FlZJ2YIQLg9ylvPlVpkaSPiVgKZQ+697vhq7DlubEfZItRPER2lEVQ/FyDChZvLxfx04B8/ohyFRZMNhsLTqMz3sMg3CRe2pr5ALBZzPc/o9g4UmKPOQzO5DFxAWxIzInUcmD58RsgZuEmDR8mCQxzLJEkpHe0bLO/yQJvx/yhL6aR+IBWCLqQ+sDDMIbUZNGyyvZ6R+j3DQzRZbKPSnLWMb1lORPSjy3Yb8Lv70x3ITh71kw1bDlhn8ve2ZmfmmV0Bt4JMPrFJEuTZHGvF1MtEsIF+uUyUs3I/AgmrE7Hl5xY6EgW5SZZPiZX+UJE3LRCkRaJC3jPV9jyHaJEmW/96VhBUBNMuMPBxSHf0eY+8/aQzd6U1PVcyEd7gb3Ht2wSPI0CXTtVEi04BiOZqjBY+MCV8ExV8Nxo7W2kKzoKE775SqN3UJB9mDq4kKtskaBjDq7ha9ssuGzZUB91yO0+CaogK7bZDYzGRQM+s+QL+r646MRUUGaFZ+RXmGRTBZHnhRtQ/hFxpEwisO340jfwiNP3CUqRRJ+Q5S41gbQifSuC/qer9b7lVvsT29yy99y+DOvdNWEpU8a/cnM6I1mb/WmjNGR5RTue+LCC71gZqOGxTYewCekKuLpggHrECNOFmk6gOp5SjY5EwQl6mwjXShh3CBXlrC4Lm/p5N9X1o4EmWAIhgGzs02kN7olgIHPek25QExg0kC1DDrpQbDnsIX3tUMcyoLHWWJycq78Zm/laqoRtcLf/8TrIiloJ20Q5oUl9HZybALZlXPnYWF1Ux4FjOr3yrKF39tWq++vZe7v4rX7X870279XZYjIRxNxFpVNy7OuI9a/vtbgqHtraRG7Ac9KWoDJCotZjKHLA9CpBWF79KJpLfppdXXtXKd1X50GzHP3Cv8/UolGSvcly0oAgtNCYf4omcresonI2DqrKcKAIYOCS3y6SF6ZiarloKX8V0M+GvdwVyR76J1SJK3/KzzvX9F1ZENeMrO4hc6ljb6k/nAoEao3PXuRiCylTBRq5KE185s3yEuTLiXtkuuY8I5aseMGU4RmBdQh+emVqs8I6qZR1Coffqqlxv1U1w1OY16InxDSBRoPetqEcdWFRdCxeFwbWRRoYpLE2munB1oNv7fcpa5t2eps0/jU4hE23WU2fTv4qMx6HwAlZyJ1j+bEXGzieD4NmbQb1iTEbqHULBydAnqpOLU3fRDQQqDLGf3KSUIONOBY4dg7ewGT5v03Chkb+mvRkjhp3yFqALHXSmqU+s3JbFV4vgbdbhL97ubRqu697ufR6cz3nJmNezrO2Jo2AX0BE8siUCg+5aOsNDAzwN5g+QNfUYjv7x2daB1Gz6QNfGce3eI3a9Qvxo1KDc645xr9We4vyp2OyKmqw1yfLHXpfa5UfEjyfSTtiFuNiZLmbhsbtgTMiN+Nlkq11V664ME+r6Qfb+UEMe1mAMRIrJhQUhKZRE01hfR68QRpMNFi+kVfqtKZlt99FBaAZSQJN3iG6ys0s0Nbr6BpQ1EnAQWPYkpfxEqPPFa/3KGOH3NKSaxyCARmmYFdYL6JzsTk8RYNlpMbNjJLNjJLNjJQJTPLECrJX7ej7a6l60q6MM0YAnc/8169AscycKwZVX0kBefFTteo+3eXi6yL538Lg00stf6Vg3p6YIimgUCKCV/DV7Il66bD3OM7Fl+v/C/5nc1/Fkuc2oZaWQ7rnjsTDGXdSB/AN7QQv4TBYLYGm5Ir2ohtOeYoyvXeplGuBqdMdB1w5+GDYHn7sFO2Z6X81dK22KYxptxCtOPTGQ0BcbtW6txLtXLL7EXk3S7kebtS6txTtXLTv3IqPKtcbyFc/lTB0vermuujds9xVhiuYmGrwDii7i5R9NkxDRrth0b5NmRPwKR449Jj+SpVH7AIMIvbKPhtyIhXyB0XQfTtTo+qBcWoeo6KZ67zAYipeL4saXPNVLl9HGRolK20O4pUJmSqOKRua8MEVbhZQFVOG7LcEjeuiaWdMcUVR1W2AcQ5HaiURZiix6aSfA1oRq1i6wC3WPSVQxbjqxKMhUJ0ErBowWaVrSUgMsDGIJp2PYQYUNuTB6P48xxYk6+6KYximaiwACxQ9xPtjBrdnIFrUvHIbH8mPghntYhuA/skzAN0nceDygPyaUFMjr/7yR8ndQGjCh28y0szb5pSWsDFCxMk7ur2hYXmW6frh5Fiy79dwRUJD8JtwrjySCB+A7aPge9ubodvv3Ll52y9Kfat3+Z0sZ2Y3hRRjYuPVRJxCaJcYpA/1zDXu3cQyDk8Aps1fVOdmhBHe1O9Sr72P7uYjsSbtXLbv3I7b487Wjr3nWXandXan5QtJze30M+gfZ42lJHCkX02ATNcVlxlq5B7R1aaYnIPolNWE1B5FxBsCFCvI1FnnDSNBEHVHS7/fWqP8G45Ah/ih4S5d0OkkVYjO54LDdHVcYIlRHHE44N1iXlENofeFMqe/aR5Ls0z9Mntczn/gfBkuJyloZAYQNrGUOajWlGPpQwega0xXkokGMjhzQ0OBWzDoWk0I41IbiEkfGKjeGUDaY54rnOineRJRVZkUeCEaagwXjqWVx30MBFho5UGqNTQRDgU2FMUCEcmb82jhWTGwGuNampDEDDSOjEtH34zrsvl2AiUSTV/dfa3x2TPi7lSPJmTY3v4TPRSjWqombsobmg/YtcFE+MdH/YKI0WnC9BiaBxVD5ORYV+WWH8ul42SccphS3Uj6MxccO7nbbirNBt4p9IuScLdYnJgtIXOUQmOPmnYiS73mik79j4uga7wOW9h8rz/IFpVMxXhiadiiq+97BSXvPvu4yI67M8HuiX7XJuwJ9z/JuFmtH+G021IMr9Qop1vjr6GvWZfDMLy8emjhBaYwnwYf3VQn/k8mTaa8+7NwBZbvtTfeyzvI2BzxLesxzk5CvknuRq8H/Pc50FarK9YlQsm6UJQwTFyVtc1jVvy5luvCBpMhZKc/0yTI/ylZ/iwbM/2879X7v0/Xorf9Wa91bZ2H/kbXaomzjJaWpVMkXc/yZnVYjzI1rhp3TgH9este2ekL9VSzwrw7lC017TXZq/yppaBhlfeP9+69c7jHis5u9y5tNy7365+o6sTWwwJ3s/zuJ/lZNr2Zlhnez8Z5+Wc45PeuVTye2qDb1ZrOYTzagmk1QNuZgmPavptTM5J2Ix8n/Pe9UfTsLtO7+s7gbzf9iCcqMeeD+1zxZ0WnqgWO5G9a2N4hsHXVcSfxCNU7Mx43BVal9Aan5w+Xi7N9urHdZez5ZPajX7sFv2ZOWqdPxtJ/8C3ltX5Zn3NYrIOYM1Bx39gYy+tFhFkyv+8wn16sKp1V1bnU57VyVsJPmkan/rd5Oi55la6OmqVWHiI2rYi0cnlAF2+VUbAoPNLnHuxqJgKdDWz2y5e/UGmG1S64N7PyciBpIa5Ia8ePPN0tUh500vi+S/foLVidpErknCJ+hPltZtTYYo5oKiwp3Gorqva1SX8ma2kjt8yRDPc2JDv3CClAuKkhXKF/DWGO2DgyVIaiPk293jApI3wYy2kisqZBTK3QVsRAy+NYmiQCvKFIEGg/qzRZyBLOR7wiIrQvzVW5aOvr7mE92b8ZcloZbeW2R/+gXrx+9G5SLcU9AU4YlYVWteQvqYKVfl9LKuF1s4HvpuDH0Iv2SYlQonBI+tQ0WzgP5jK9fFL3VF2yNobLH18LCgmKIKpgOsGRQ8pH/zSUR5L+NNAedKbGIOUOq1AeIIaJRpz7FjempZxclALqjCdGvkMR6SV2sOSBlJ+nbc0TfeiphsFnaqGKxuFRsBw4mwaWRM/M1kjeIonZ2pmkxzssk74p2NzM3Z9wH7LSa8Tuzl4NPlS8OZayHERwuTd/nsfLbrUzqdl+gLXPXXu1kkzlH6nxaoeKjWut3V6dlO69cqi7XZVfRIRtFLEOqoODcpFt26njKMzKhd7rOD0QMvoFCDLnCnZ5MqfqqUUuCqYyWqQGDk61KCh9djyNaC6fSKlZCjaqqKQNRHmn0geU7GJqTMDVh5EhFkQHHZE5yzV8BbWqKF1uVSqxIyVmCVdtNqeVUd5o6VzrvhR1L75Y0Dlp+BtoMVZsymV9FxH9Br/yLxg+XuoAy7ShhwgO2wNlQ6/teKmLkU9UuSRAuQ8elzRdYDTKgc9kcGOC5rz3RJNlz28qKn9eNBrsyaSzNgkHNnQ+ScUS4iH/zpUoz4/fADX+ONak8zPH3vgTeMucJLYcXj7Je6lJeQ0OVcdkG/dIqrMyZ/bh2ebnU6rfypMGvUGRa1Oxxvbdd9USmbOP8H8kj+TVRoaArYLnBvZDZXsIJZGN/PgiYu1HbvWEk4fLgeq8qi9XURBbc5t5tfO1V30Qe67XE8vUspj76lWD7PJsEXm6VwRJPvwKmFz3FYnShgzEc7hUR+pO+y4L+9Kjly3fNjsSx7g15YsL4ccBiTqhDgz64OsAIRGAND4NNNwNzP4+X79Cvb4fSea0b2/q6NqXL/qt0Yax+4CEAgiUaVvU1qf7lcnuj0nuzWpGd29tH+8x9t7lkbyz9tbT2L3Yu3yt3Kcc6jm8QcbmKYcOnmzLg3d3ETZhGfXSiz2PzON0NTnE2ucc8+7xq93nRb2m5sbRvygXfN4OHIs5tTXRe7/Rf9LL5e1xm9qnZ3Sd5G+3j6UFln/nLnOMOwqg0uVxsy/tI5pTNZRjIKQYoJE0h5OLCvWV22aMHvF32RbkNNobMTBQLHBR4/9G/tIpm0z+YUgcWFwdh5zcmw/I9uk2EjA9OIuhWoC+3SqfoOahg9yfyhTycNh+Q2yWXGPp+eNkmTaJBDy3450RYtCaGp+pQMzGUpm8n2HeCauJmtBgKG2v20KvxTUm/oJB55n/qNp+ijo7fb9QuQXs8LPEiuCvRXD1wB5d/H/OKoE1dS4Ln/B9afAxi2UvXNg/bxSKEjG3Wnwdh425OWJFRuYriXP87UTtQr8cDUM3i3SYcn5aXGwMFj+6MvCjG+JtGcGyBJPXvdTJ31uyxNhNjkHXC5dPsl+9yRYeMWLR2tSseJn3lxr9z/xKJBl2iFGgTuEaaPjr7VbIaEHu22XnJLXoWlGEI5lN7LPr1kf+aPMyGtaI1Y4nK033EO6kT+uXvhjt/uZnngtb/xC4M/zuD8Lnuue0qcev1bQy6HutWP+m9Cbju6EVPxF+/rqlkyw8wYxuvHY0/KrS1JdcpAUutzlEybjgcOnLSltSqCiWBfpUCh3upOb6xjGfmQnOE4KgHd6AlhPdyZde+LFgB53DUjeiH9lq5KUVzpkUEf2RzXlk7SUTMyNipTETqIdZXRKJxKSJ0rjnYE3FKkZpbGHkviDaG29udNg7dL0IGj2WA3zQnalYFcaUfrBAaz6X99n2eHHJY9ddf3MPHz2Hq2MAXw8Jb4cFq2sR1b2gp2rHTtGL3KsYlemePLVPnWd4q+30388LfdXlBufyJRaNtqd+2hligzL6ZvU5bPExSBbB2MUw0v2ryLNVVvVRE061qxjGXSR0GaJuS1pU7Itybi9ImikLk44hylOBtXZV0m6yBkOXf0sTtcIaPb9kBv1TwZiZ1KB/nioPE1gaNQ6BI0hPbJfmpSKaoV1weWVFtxe6xldn2vpksbrJTby9jbcreIPYLicQVE70RZrloYcXCGrPDHR9IhdIGYmuHXPP7zyJM353tkhsPW6mD1M4n5l4Uwo8cuwDi5/UHKySQZcy0FWF7nOqgtYWwuuhDpM6glNjt6YFdDKOSfon+mOumeGj2NykJ5D7abO7YmBVm1x4MjgxV2l591yMKOElMqOrAmWQPcfEz8AqFz5E4eblV7sZ29WSJk2mr7Gn1BcWBSAfhAp2M+Vav55yPWPcYF0Zcat91UauJ41tmoSmjCyZtfOjGwmW6q7xh1CAYW1MmiCt0RibNe0NmA2aZ1MfRjvynmQ9ebYPfaj18t/QlxIgpTD4w/6kK2eLtDFJGo6i1dhKklglWmJpcVz3JsuqTPNb0b3ERUqxPR0B9kfum5O0vyEWEUW+NR68xch+Z6AkFGohIChFAXjYh0lHpRtoPWqHE0HPaYISXOOHYORfUSF/UBsgn4G/sIWyTIDZKxkgyW5dyg1+fdPBwslJBagditKYBxBMjmkpcICHg4e1vv4V5uGtQ4zOD8pS35Goyj6Fo5lqPteffW96uMXu6SbIt21/zrTJ9/V0Tr6qkGbTarXZ9P1KlqnHlk/bWrjpfW74o/70Np2pPytHvlqv+JJ1lc1teIHqV6Cxd9Y8g0D0xmwn0l7Vfaj0NZPGnk+82lbJf+95yVS3OfiAr3rrzuEazmiuhF/SsoaUH55JMsA7yl5Zfmcd16Lrosh3gsYfiKj/3UK3qJXo8+dXq96vc7xrpPvPqzy/zrRuefO5KDdgih1YfrX9bvvUgo6XMrdRGYzXBdruBdkqMdHezzExjYLo/3wcX65MsiS0RqcBr3uj/i1P2GtC6AyxLamy+mj+utXm96vMrxn1G+/oSdOKxYqTputYgPsaF8VTo+nqVFZGtF9mmsts/fDa/0H0jZOgnyv9Wwb9tV3ztvbs91zFeQmB9tuAhcJGqZ6Polt9i3RyNKWpPqE/HS6wMTCXOtEbEqHkUDxm7ZNSIaqp6S5AT8oSE2PQdQiz+2QXhcx8Smd1r+LzV9/WaaEDYzv9OKv32InyqjeKz3VHwYw97PxbOsZkzIQJGi35/DBcUH/jb0FoOoBF83E0hG8P0oeGNOHOEvjn2WKH1SgsQevLNlhH/6dDxGZZhvU3azgQ+IcVi5m3lphWr2vijk5GkSN1klWmXB5x/g9Nwki8z611kYoWuq4UAVYj4zJxCfVxO2oH/5EqIg2sRsHMhYtUeugxaIqvoikafJEpJpKOAj3oBLdX4sqSDq7lcjJ2Fd1XZastizD4TFu0+qvK89A9rVe2t1bR/BmpZb7y6Ftg822zZIQplG9hmh9F2nfK1KSdbR1LlSob1HnTfk7dUBUJKnuXpf9FSSC2I3pKYXEFKk+ViJuZFV5Tinb458PL3x1dcBrvbbgnaHgx6S7TfWrWFrfJX1s8PBFytKyRlLg1ZVlkkZNM1q6wP9m+GVp21jbI02GTb19pVp38r7GAgjdb8f1pSc66ZTtn8kxpVuvtlU734zbc1QYIfi7KoGTJp6NuYyJmRrnSAVpRsETUlkgmKnpVW71UDowVSqh6UAyqjeWDR96Tqs0meFREnvIvhFbqvL3k9LqhS12VdKF63I+U1xej8fxdfnrxcT1/7w1SmHDqyLVuLSdUPk7MuLv+HrcfnVGkvbHEbJNvC2Hx+RHqpzo3n2Q9Orh+dGD4N++8mxuuQ58eBy4v252E0x4onFXQwohH3C3FM1oZr0sgCjATF677/dqaCmHBA/i1qYPF3PMqFVShJU40hUScnRDqknNEtkTXZp4y5oOzDGpBuLE1ssDabtEdBLB1MiqzkGvxeYsrFJCBJ1wErFfBuexo8zR6mM0noqyxRJIOxncahnFiUoGRjHdTH7Vld9xKUmiYI15gKak1Lto7YXV8UCPEXX3q1CcAIc6D0PgYO21XW+DtR70agtXxpUC3h5lUNi4mFGc4JF4t4jAC2eBp66qB74XmnnsMDnEaNaiShNrlZDCdIoSbNR8JpRZBuDBxmQiW0DUM3U+gEqSInmpkynYMdFCEHUMIKqtIxwndO0gzWDQvxUAM37hV7BRUQgtUE9IXsw8j8KsOUMENbV2LRTOieGurCBMSCtQhzEDS5mLWIyF/PfMyr0wRerQL8MHHqHP9Q5ZOBiNkY6EmGrA1LuxazBK2NK6zDmkBAKccKkklX0TM6RvFnhA9kSUUofeK/piPhNgC797XnGnHC0G+Vx5j+YcZuQvfxJ2AvwCU7ceAQxBrXIvf+qbRVRyN4279DcUWEwURifhXqQE856y8Hj6Os9/U+ufIvPHlPyvvaXfqrqjJQg9R2CjbTf+WSLvq56XlGv5i8n2FZPtGZPp6pPJwykUK+LPlRfNLeSENW3l6o1L3RqUmjMJ43Fp1i+Z3i+ZOU1RqswSdxK1fFGgaYX931h+qOZUxDSwiCgxnBT7IN6TLdt0nF9qC/cMr1d0KXEIz4798Oc/ZbRETFZa2FgzCGgSJdnTNMBA8b7kzpo60FRjcpyekSK00S4jEHaeTjunv6cq+S36gKBIxdXDJSQSVKleQJQsTeOjK9LXuYUPIW4BR07qkgtCIYdTNdF7XGD7NogrWAHy3tklO0mKbJCwcRpcj75Z4DLuPDuMe4zEnxya+e9QEGLLqQBpHxbWXAj4SxolE2XPFBtsCwt5aEsiEjoJZfMVO3NOsd/7ifBq5dEh9GCNZwHyZ7hcu3DgfgpDZuHhetTBP/PY98b/67ZulxyH07q4n7J95zTtRusCnPNB3rZNMeK8O9Nyub1jIZ8V/36OTX+tQheWtpnV7b76zXn/4qRlSj9ffb8XG6eooxnwktf42ZdYAlHLHS1CdlFDZ5QEnv32drbGXajL1+btYFWbjU3ztRLTvRLbF4WAXO/D8WHtIX7ZtVqmaXgswQ88+8a/XV1U7vjJb1ATWQX1wJmq8255M7XwplGnbjWsbjysTjyPyZneCgEwWych2abx6Kd83bPvMyKwXzze01HWiG/ykz7txKmy173asfTcN5GioerqCWuxGcqC+50AM+yj/XbnnU91JnOI5ub7tfSvv+J/yY8SllSc8aX+L9m9L327ukbr3yuMmZ5xXP+CL4o3qiy3m2Ian9Ian5w2mer1uWndZady5tw6Wt1rdVGDUPwhnX5OfXf06++Z1t9ysxmeXdsV6u9b5u9HlPzAYGRHY/ZZ8nd3pFbeRR+tt36lGVRZQgTSsoaM69YmnU+AXOpROBIjbiH8j+KKZXaZFMTl0OGrJ9oVspnCJuIXNxUSfHkxuwJPHJ+clxFlyXQZqh3P+Lp7isupg5ZIqTQSKFQSWJkkwAPB/7PRUdNlJF0v89r0gpQSFcW9CCYkIMNZlHCxmbGo3oPjn3SyKHSKvGRW/IZ72nImu18uQmDCfFIyoyYL5wIueD4NGyBpgwA4OmJI1Ah4TPHHOqZJJPAhKCWPqrWFLZAfTx9X4Dgjg6e4CIkUmE4QilSTvRNnEBxjQWuv+bVJmgOwmEZZOgMbFYWGxJsOL9AC+HH1jHmABYLXmPdrkM1BAm6S2mAZPFBBls1B6WrkPlfb+p9yX0YxIFy6Qs4oPznZfQfjhp/dc+O22qZ18vOjafc34vz7ydxB1YfjAFVm2w5E9lO6MvUF1h8YVCgUBR9o0wRVMwOrcdgboDokbsDs0kNXbSXmzlp5VPNTjfgc2+xb20h/DsW3jQL68A3dOqxOeA+AMeA+DwmP8eu7dU99LcL95X+fSafe9NfEbNPuV77gXwtBd/No9sfHwd/j2JOfITdak2bIwy+3jr+Gp3NvLHDPW9NeLmY/MNfHiMyuf3K0/bvl3J8yf9fYA+WkL9G9T2N4nsmeSzvO+qVQCj8bT7H3ZKSzDnqCvvfe4lGfF2Wr1uusn2mwuL1H8m4idAk0HJudzjSnvHXuvOdufNbufNTha+49O9JTAedg4HvWzqNaRO6w6WrMqguadd2PFprTVnuTVntTVnpkRdw2mJWsQx1k/yRc1pF1RdsBOWdmaQyzzb5zQZgGnJCtaXNNXmOtmX6fx2aXioHU7p+6n9XVaKeXITl40el4k+kZ/9Q7Bt5oXna6BZMXHztflsgObduDP1hXntV6pF5yR5MTzjeweirX1lQoYlh52lxp3l9Z3l9Z2X1BaftPChD7TmD6TmLudWlZW+e3ulidEqrjZWppKo3qiPmo4JTs9WrNv2kSS8b92+2xTu5m2u11ea3tL5O5ppldvsddj8/t78el58ys58yMZ/8g/p9L3+lb3ysb3yMb1is6pl1Gqa4Bu2Zsa9zZI4VXtywvBFecsn245vt45vp4dMJFGtsOla98MGo+of29VvMF/yYXZu+Ni4A4u9I4ONN6BLPs2kTdkEbp9zEyP+QcZqqOLoJcn6z8ddznJX2lJ7y3J+zsn2nS57w4ZCgESIui82ASCMovfweM9RrY+zUuUlv6XbnVcT0c533p1nnZP62X/XNdueZWvcbbstWy7Nv1+itmmbTqiLmp4RTfcZ0xnnHXGZ96t2qf6d7/0r1/tHjFfzMr2sV7nrb6XL5I0eky8bx0u4PDWRXlMFbYtXUlde0x23Q0DqqcSZiRABojxmSrlVMdRuCh4Lq37JLbYBe4F7474cBrCLWqgYrsQ7g9ySDYFCMcMfVIZ8id09MOh8WJjFgmZmx3a5qfwri8Qg4dQHsUN54cINqPfCNFJvi75I+bTvm6b18HO14zEK6URM8w7XH3FfcRCBvJZ38RpGk0WdAP2DLUmSWHJjpYJW7CSRovRYawwRglsEPb+WMFFZyPwxm5JTJGUGvkX8NXGpsr0eNUVLRP0P5gPvSuquNcbKUtR0QcoIklSv4Lmeo1PvGF8CEayNGVSjOtw0moYZcZxO7Yn+95xkeMkRoIwfKPmCrTLC9fF8/Aro3Ici2Uh2okvg6M9dm6ynlzdUCLR+Bwnag0OPAQHjk2qQwhMa96dZJgM9BU6A/uZvOUZdeBalEqrz7f66lJwqlaLtMQZo5hZP6pmGLOhcccCc8YPcuLagdwMio5KwlxI4KUJmC6ZTArrlo1x2Cl0u9w4qLVAmFJeqRETJRo4y3alU0rh6CNkMOl8VWztKqYDUg9P0DI6QZCyG1H+CjMwhqW2aCu2DgT46OSadM1cszRySDEsQDskms8E1SrDzlwnqhlOHh861uPDxzo6szON7xal+tPC+Hyy10XUFvMhm7SuQClniYY5OueOc5VFPY5sjb9Wa1WcIYimuQ+fwNWcvT8OkVJLFWfVyXtGfbPhiTRz2l2i4s8JW3IoI16Wl4RpQLBWHt2LewAbrWCzFN1n1LwrpI5keFHeEXnllezU3NERbx94P8dkJLtY890Nu0FLxoO04318dmWENKvo1ejZC2iIb7ljHSjaY+kas/jBFKPn1o8UW9v37m2vKrWpjeJnq5+K9UvxqpfnxYV6uvyqe+t+EJCYYa1OYVODWePBMnce922hxQ1JrhqfmjFa9YC4fVydkkHJ5+1J7+1Jzm3MU1kflerTWNVzK/Bm3axW9oSGH5677cH27pPs+ZPoeZOe3Te2qdRU9RJM054IHc6bfKeQCGbnTst+GvX+trnUOwcI3cjxl1uOd+zB5I3E7kVpyo1lVJiNgkDpntDpnpQVPPy1fdadcmoJPR8zvsf7mca5hytcFYHu+UfDwtvIznG76bQDefTtz2PlK7w3yKDpM4tTHgTlWM8+ryd1GXpffaTrd2TrdmT2m0+9zQwzjubbFuZ3eMzu8cxbipuezq5POv3KsjBMFlbrP3GxmeieqGI1RROVhI0ihyZaYWMbm8UIJ+AcAPhCzFEi3Bt+AkJNEusRDxSFQbIKWiRfZSBDRlETTLHMGMmMBFVNQRjJztU7SmSwXcgbqqvYIkxPp4ivqnAopAf4p6gAbxeq+VBc6QMTfSUpnvw5uf7ozE+whjHNA6QnayALvM+0Rj3bJJTlHIEmkP38ru25OY2cJGAyYDArW6hJ6RPT+U5G15XO/It+YwyGm0l+ROYHL+ORrNpkPwnqDHSvE40D3JkSAKCidvFc0nIDDt8YgXR/DfNsoaJ969SxKWdlvEpnH7yPcsG2Eiv67dVTUE03y9IDDI4sy9HT9nspZBNJBDRMiraHpLucC1PFBsquJmJOfYygvolYgabG1g3ABWRuUwyMs13XUoqi5SMmAtIpINWUxyhn49qQy8h9AU/JYQDSgcTo1/LWVPA5mEibIkuPBYd2M6lwyJojMXxr2cHLtwAsjycpxGDnxZcViMdRYnt/dsenxmq1ko6qhkmuR32sxw61a4bJKuFq8UhvT+IF7Shy9QvhiJyDlMPjDT1Va3dNkHLD7lYbMUiDVsxdHV1dscUj+lcdh2iAXSamOh2ndF2wpgUiJnetFAMROsQH1hPhJGGoj4fyUykzKJzpPhsAR4lIJbkI3WgtLDJh1YcQX2WNxmmI8WlkpuwSpz3Fenga1Sw8KYcGcKXrs4dG2YlDYP/8ksPLiXH/bUsKC/PRmuoVWTGVkNvKO+1NB6RM7aQ3G5wrel8+cGQobEFIKhsOfjluTaLK5pXuHXuJ9u6qs7jriardXLrf3I4LMB453429XczCif+ewWjr7uVr9eXlV7cV2t1FfYauUGrzyZMGrnTr2d4vPvqMr2evzKLVe4lprnrNmkYKIsDvM8i/v2ft/qj/XGqqSYMM77c4wxTDbZqU8l00aUcxVPMCKAS6mQTDkByLh4ZMTAGt9q0C2u6zT6iUnMaqujUKkwF0GE2aNGpk4ydfUW+ZpWJawwMQ3o1/N6LydqhB2rNcQBVaFndqCCyPiibfnF692SFdWN/YUSkN4mi3ZeXpRO2HQDh1EXaFWp8NYrKnyaRe5YnKgywEZJQ5IF+gWcAF7MjWtysoBiD7XxOMYoRdKhfVs5HyRGmKB5YkNXKwTeX1yCHw4ZxXcToEwaX+iWu7SMPWJv5BVkjkAGFPnikZb0Cv2PJcj3mPH/Yo9OQu+AtT6D1CpPGDkxZPgGkdvX59i5Stnr49S3Z7cayMn1kdOjpLfbh9vHPEeTPfHeu3qL3Q4pPte6kjChSfUVs5oqZ22ybLm8Uzrtv2vlrpqZizOEM3DLxtf6B4nqi6sB9kmRDanM2FEiAhQzxIOKgzhCvo3jisWVFRJ50agMOolMkImmUyx8YrgFg0FQ7qtSFHAXiiSvSkiuwgCiERL+K7ZQDo/IyFAHR6UTGFHU+Rz0FjSqNEkUrrbG8jjW1fxLcnVu5HbnhQKTiyFMlg6czjwbFbaVBxQsSf7fkv6Yk/hwma1KuQEU0eDyC9a23lthIirONfcmq+oQWRvqiNLD0xwqYAtt3rKrs+fVq1KlOm1PtJTfbJTfTdD6AGEwZ3+u/XVijTnhqXLiOyQnLLmBzG9QGNN4RbIWoAHHMhMBlaMMOSnFXfoG0poxL9PuckCIZh6Uod7/B8ipFxsqVST9iRM3DU2nHLTW/SDsLmOOKjtEmOCMtIkpI8CspC41F0Is73JqzlF05PJkx772iSM09xs2zoFw5XJqjn3v6Zdgu3Fpezj5J3Dv7zTkdbL+LtB/eAlqgAYzXq/8TKquqyJQNYPn507NznF3ufklbzfZ2qpZ19NOvPc15ez6Upr/ztdNjjpR+K3Ws4gNIzRafid1/yua/slGlXNV2CmrjWJTLsOeLHMbSqlqZzMf0WfZQF7ZFxF6TBfYs42lnna/1xzL+Vg24SFBYOj2PtHXB+dl6rnzf2DO96+calEbWnMbUjsbu66pyT52TtzExPxiPIHIbHo6E1E12JtIxFggTpsQeTVKLknyPviFVy5pCBsYwQZU5QcScpAn8xP5OB5IVLPNhuQVhPpnFxqINU5uKwwo6ggzImD0HqzGpdUIbJAopnUZ4s0jcYyHkV1AHC2vATKsCiYaxcG5cg+s8Ed+oF6HgjuuQoSQAcS0kNIy2sfiCoCDI229I0NwNQ+GDC5b3fgFHhbGnopgHgyvAFMFdb30Yk+b2Xt8oAwEZGhdFjLivKRUDTW/ljROFfPMx/sCIx3HWgzLqTQz03OlAWeX/hpcGyWOJhpThpsH7fYKf4avZMWiYoHmPjgv8aWM/F3M0ZjjTrQs3xERCwI51Q3+NyW6DqqTJEnLpnu/STPo0xJrCm5KFZ7MCbK2606giWMShwGYJ3pYLVQZcM80LQA/a5bdxq4mPiVtHrsDssE77yI30GELug7qYNLTWUd2aJPoSiPHKwnkkNee/85xrHvw7vNnm6IsALqR6b5pebWJ8r3nat+Yi9kiHEUAUAmuYNXeADrnVMYIvNiOEF8eYQ3vifSSiR24xIre9LXQr9oXKN4szHMlZmX5ddiIAW/Irx4V8jfoqWN60iye8iIkh2R58AxYAkOW3d6htFyOOQfTJ0Zpp1pqFLZQoaWQsR0PKA91qMKfSrUIHtdTfsGN9xYo9ife4WlZllniHvXLHv3I6P6cdr5ylZqx5OF5p2PdK/nHztZL0Vjruw0XdxytHzp1LHfNsyUk9sXVucKnhnctcDmhoADnlxTA/rpa/I9jFdpoEmw00GJCsQmxOaGhwvAGC5NanmBvImjSeTUkG9WJAy5G667FpFyQXzVICVOOyY3kmPt6FG9JLxL4SnytWCMSmPRim/QaJY+KFkQ7W90BC8caJIYUKEq00eT2oUF/CLEkXUmAfJ+36sivtGH9xMXcx1CMJhoWwpEZx6hTI2lJTIGW/8ySWvqAwq06fBjlhKpbSokpPHPTtYqJ+rx/PZ8qGYjeotVeKDgQEroHervAFJ4XMEEaQ5KBYE0fkftvEnEf5Q3OhwLcQo0rldmQp6QWgJTW0g/qCuD3fBCltau9nCUdPTmnkRJ+9GrLEWutSbB2nK0TPOBy6Uha9c7Bo1UuIZDhZfiyE17bV3oVxrfsWApsWCZlaisNLl9zNDcixaUu7nT65GPJ0Q4ICVfIAANrzsr61N+/ElPP9IUtPdAVwXjSDB/VvGc94HiFoaganoKk1ggNRYWqyOVwqRsqBR9Rc0PUcuR1PNJMHFqL4eRB6AOnQsOgw1lrOEsN4uRBZ58YfilIOvHHyHsbFm5zh9FTRE4dc4OFw8Fkge8IqnW/lumCNTNa/J9cEWtTy1i/1lVubnCLl7g8akV4zPB0h2NgZ0d0Kkh3QF6ocGyQbvMgEV8yPqZUG10zMbWYHJ0amvEyYo/gCErzk5k9TU1n4mFVF6Jt8jPV6TXn8yLQ0ILZPVeTpeoRy0aQRIIJGln1MqHtqNkrSQokyQjvkFm1SXLEMJH/DwgO5FRCnMEDf9yjr+Nj+hP0bkUspA/OYwnRMYRlzroKstmUvWKG1OyByQpXkWZVUS9IQ5Yl0Lr3jQQq03EMiexOZAA+ejBPEUdcAlED8VpqGxwXI6FjWFniUQm+uRaVuBqCwMNa6DGxpgeUj3CSGLOPggrqT/dEEnGARRvmRlIxgVvYTOyqiDp2Ch76IBWcNoFZg2SjZuZhrVbCANEIIneDopxANAoS5CBlitAhiR9IVsokNuIB4OPMqTCHg9yo2o/CR0LxUV/RnOaMUI+rHLSniIX1bE3hiVN9IndszF0hIDzmiT5JlGUYB+I0xQGCJnOYjI6HSWFN3zpRMLQXbASvGcb0vefwEa0BXK6frTckFNR06qXF/ffQnYbVZht/6HKfPwPjXsmEoTnEM1V00EPC1kVxJS2gAbNM/nPG94kE7gkJwMmywkjLwQMYEG3JAFjfRXyi7K8jSBsiQ55BeqBLE5sNAs//UpLucEzwGbEuspNKEDQwrEQDgHmXhWIj0aAD5vSFyhrpkuZynGZYEYrEkGFFEj0QKzggBB5omTczzAW6pCqspQOYACFeEL/SNXanvnkFlFqFHJBwibkiugSjYUDaZQZWvpUMXhihKNVkGRjikqdSkH3S1pW44wLQGT28LM5YP9mMF8cMmVRoH2EbtRVGIUXuQ6KBwMp4TYSpLtzna21iZ8jUIgviuD8PD0KZUiRAkOWzTHRr2AwBZgRZYUyRUmhM7b5I8YYvBEThfpfkP/MJINbkZD9/swPzPzaa5n9/eFjZxDQvW8KANz4qRyng9B+OQHQQsEMCh+uElsf9RX3oLoSe8LPadc0oi8BxIqCrSAKsaD448EFi8woFtrWbBML8cskdAq3Cq81JkW6PLHARHGGMxPm5nkvigGQ65xi7WLjahCAM61KSSlB2GUAiLaGORxBdZbGDhR9n86kh+jqk1e6hWrK7jwAEMLZYzUXkc8aIiFp1GQAyBbM8JiJjoG+SL6QlqPkCxx7EO/OCrXhD7bAJhTFPxbqB2HkHj0HJTwrT0gOxpJEJeeyGOmXpxN/ikHiW2+tSDfiHLMazCyoV9PyHbKWaqwvbaSvqQzYUIH8GkmeGAPSJIgwD/wIRKTHh2VCqjSTBRHQhSX3aOY0DMlcU1BQIwke/OLA+ZG7sDzIjgtjHIZG7nkaFCSmYQSVNeAtwc8IFJfx0JD9onzL6jnkRGtgjA8CvOIJhvTDYM6oeVmVIxGaVk6BnktrgRJ8hxPCEyBjV0oYyROralIvqhSt+HMCBj40SUEHw4U8dQEVbjgRaSMFhVQdt9j0+gLZhshF0M6nw0gqmFNr5QPM7MaRLaYEHB0iBgWM7MmRIoYzYLpLFop1QZjRLqXUcScJwQ+lm+Q1O9vhswIE9YlN+G7KcXMMPKM3UM6y4sSyRM/EXYGjILmESiaQUx4caQgczJBUoC0I8enGbpLhTSnSV9t4JafFwsrI4EuQ9Iex2VAHoruAP+o3DYQq0E1HCg7dMbPyB4zC/+XwZmTciKC/YlaDZfSKYkLZZYVYx1BWxK+Z6M6FnaFEucAHoSVVDqmoHrb8OIFIwzLRUMQmKSLA+QrJbURwpEOHowo9AEgGxRMVGkdkLUq1eTxoJcK2XB58IJoBUNXYYzj/RJG29xX6IfipPHXJjxcxU6pQf/ixJkDGpeTOehKUzP7yxMtBQicBxFDUxw/l8wIm40DICAqDgXIymkvB7O9lVlCp4pfrFOAzpyDjYrdynPoo9FlQYBYozqR4msZME3Xio3kQkVdQgBwiLjZvAPCIlkE1kdj0xq9nB0jbt0hZjoRGYI+Mgndele4z1doI1+jAR0hSUiIKWSZJGIiAvRU2DXXAeyCfA+KlzG4SiQcLP5uFZfJ3tx9Nmrqzz7PsdHNXudzDHK43NJxfeJ78iYB2VV18Z/tTawX/nPkRDpuokam3ype2JFsQGfU3WaAWI6XFWAg2UJcAtEYjvWZrnzh1ysAb2lCdnhTx7nIhFaB8BXhxeoP45rACASG0Mz6Ek8AfVTOlWeCqwlE1CjV0LhXHdJX/UANz4/JgsgTHSL+CfKO5im6lCympMUQooUAFllT5hTJO7CUuimCxwTnGmlscFScPXM1txpx0EgJ5IAYXRm4RRrCj8pbTnud/ey5it8tAcX1muYj+uLfgRoFxRda1njrHG76f+hdsGyc5FaB51sFqrZuylSB5yuS1zXa1njmN15z4rbnPyg/ikdermFGyIasetbvStTHCZUVa2VUeALmDxOQaBFkwGaxhHga5HlglMWYHpvf/n0PyPx86OdN7OdNz5XZwVgrN/pzl7Xz0bv0YxgLF81wn7Z14cAWnoA75iQapHQwb+8Zzf+K8/O8U/4+C/4bMS214A9aLcTACWQ1ZoBxEcENMQvPCG5QeTxgXg4HGKPRRrPCB/GDuwUVoElaWCSUsBpM7/yz5fDEqGT7KQynluCQX8Va+rmd0LE+IB6Ehq5Hs0lQ/4omV4zrwtidtyRtj4XoYVz7nNT9FNCNBzNDZbkDvuWJP2NUdC9sBHc+wkDB/6DGed/Mx4jMakhveeYBo6+d0YjM6wWK/FDb2RAsomT9WKAGY2mDsI9Vdx/0ZBgJ7h9Wg4Lcq7ucocGg9CUIBc4GugDnJYJH759RVWb4wHhtGDKY0T/UZfJb48KVVlXNahOlefMAqAxrjUBIqWIIFhZ1EIdELV6OEyMjPNnNasHOJy1kjHc48pnJ0JDlc2nHADQPN3FN0oBypRfx8LojYyiYyf+SGMdpRLFQvh/xITPAAPDO1wJGfojEJySF1wHbSzPGjhcoDsdiDK5CZUlCWcI09Ay0iuDUthZCRlGlgGJpeEZF7YnjrwZ0FzKyBsFfOZxcik557PLYXmRI8lFSRkplc88IEeSoUKKjPjtADxdeV8GLLxOVXd8oyS7YXABUQdh3Biz6cn7MpVGbWAPv8O2QGG5G61WQDfMxJLghhkgaQC5FryiPt/XlsyDYQpryzNYUdniwPSFKLIyg4wJZ0djZLZi2jWeEsIjmbQIQW63dNfuyvrX1XU5ld4rkvAXxYJuwwmBXoM8idxXOyxN+pnTgjgkD9gTIjvYmqkBwMXSxKTs9CVYoZcDfpqcSgHwIs5sIcb3utWk2j7g7K0g78xwtXb6+97BqHJSN+lbupFaWATjRCMh6nAqsUqmMKp+IfKh4OBpEDswM+FSBEJYeK6Vxv/3glGh5ykQUb+HadlEhI1D/84vdL5a0Bb5hgi0jV/pZFYHB5a6Fhd8gWglUBNCo/5nW89IHCex4XxxbpnRloBrka4CCfF1knlyIhTw0tjGIfeWk5GobXeKleRV+NDMheky7sJGTg+8AN8jbRielOICK8VFr0L+8lzLCD6GpGwG/KZcAf56Hja+zXjBpBvjbEJSO/0mmURv4TMlQSlXO8ROK0OB43iA0URJtE1LkCI4O8DcECYe9JnQvI598wfsaemlQfsVgcxnGBnvp4VTnYKQj2qmyjWska4npSaQaEaCNqFDx0RQJu5F1SM9CgaEwE/jGOsJCaUP6RIOKPUMKP7SNTnHFYk+T2Vy+JM9WhEUhY4zhGlXa8CK+Im8pZoSolfmMtfB0vEK15e6pVn68QH4g7/7UzaJ/ADYnPkMJG/ipWoFqwhf2QmcUCf+QklcoIVs7DJE/czyYCZ0J+cLvsZi+Dkk9ZV7pDLaJZZXuojVxHvKhyvWQSTTIJqRO8lidRmYoDSG0sjb6BLSNdohUEK4G949P/THbOXSJm5nf+lciU+HcSkieQ+G5EdUIRaRP/MwjCuhPbivIyyfDAVwlflWQCehr0J24TcJ+ipH/iMIKSJ2lSO5XxnYykc+TmRuYaYNqL/kg/EskugtWJIU4ifR0mzZ+8lwPbDn/fhPfP0TweW+q2G/XYBOP+nfBPrbUM/u8XCxoJYTGnJcHedGPIjhuhbC9JhPL8AbJtWaAY85L6X9/WQfaN9f6KdR3HWVKW4p1A7Ex/Lme5H9fjX8dx/8cK2rim3CD1pwz5MwCC3JJI70J54wLKnu+n4byq9PHwtKcTal8k/TPV8/rtb92NpaI8x2vJr/sPTsxUBJ5vUdv2o4lXC/GuT5eeQrPiaZVvJYKoa/+O8e6DvdBsD5y+ccX4jFqdsl4/q3+osk0Hhd4vwGpNbSYNxPKcMPLbEUeHHyt9/WGnUXzvAQcLQMAaToEwvQTy/obwvQbyPgqw/AJ5/Adw/ABZ/AcA6T8OoP0nAdRvAfAEg6Hw9gOkvAOi+Ech+B8t+EcI9a8W/Acu+Ecm+AcPoK9HoE8PQb2HAHQfCfpfA3j+EfgOBdLQL0HwHoLxbgeheEsB6H8FQHqXAWFoG6HwVQbi3A2C6R8O0C4bgyoPAWFoE6HwD0nwNgOgeEsI6H4VgaQfAKRwqQvwvAVoeBcJoA9HoJoHBL6tlyCNA9KwF+DYH6TwGg+xfA1JdD8MQSCFA+GoN9DwW0jw5g+wfAZpeBcO0j0FAzAtJeCYJgGEKC4ZgiAtC6SwkQDAtIcFQ8A9JUMAJIIJAnA6R0EgiEIKglBdJaCwlAxpeAUkAFBNA6SwMAJCQBCiGoNhzAGGQMqHAFKQO0LwjAZZfAMC0j0JADDdIfCEE0nwBgCgeEMFQsgOEODofoPhTAmEoBRTAOFIJoDQnCEH0OQDCHDEKoDhjAGG0joBAHCEloFgGEMIoAQXCGCoPoPh9A6D0l0OA9AaTaDwuAhIaE0uAOAtDaTQbgWBtIsFQzgmEKAwmABJaE0mABAKAQdi6AofgvAFAaTQPAdDUioeA6EIPAdAUnoGAaH4KQJA1JoJgmw4Y3rhFsFUomlLzi8N9sus9x2rQ4U6UKNt2b8f4XVvqWRTrGCq39gcvcZeOuHqO5+fB57M+l8YLqScDWVzP5J2BW6yusImurCRVYJ7zxw4c3Tg+lE8ZVv2x2idxJG/sqP77LoS/ReC1rdspbGM/qUm4zGtHzh9VnTAYfRVhUGXCKRKJ9KIbCZ156UQqB7bYOWl+BbBC0tkoxUTgmFm7JZeBmLqZekjzYOCLsE5hzK6M1ZFinjT4+OIjzO7n221sdarX165awzy5t4HTOz31kHnzln/E5M9ZR70y38iwH3jlpJIsjwh5EUmXh1Jozuv8L+juzw0/fO///fO/778Z58M84RwumkcWAFAmzMzn//udt38TfPBc76d3X+uZZra2sFVqVEwbut9r7Mmd3vXdm+edaEnOTU7kNgN710udaavqA396KqdDWo4A9AQUgR5MICWcL3BtLlyBo2TRiM1TTpnCoQCi8Vz+gLRAgsRwDqDGZe9G4tQvFzJe'))
+# Wrapper module for _socket, providing some additional facilities
+# implemented in Python.
+
+"""\
+This module provides socket operations and some related functions.
+On Unix, it supports IP (Internet Protocol) and Unix domain sockets.
+On other systems, it only supports IP. Functions specific for a
+socket are available as methods of the socket object.
+
+Functions:
+
+socket() -- create a new socket object
+socketpair() -- create a pair of new socket objects [*]
+fromfd() -- create a socket object from an open file descriptor [*]
+send_fds() -- Send file descriptor to the socket.
+recv_fds() -- Receive file descriptors from the socket.
+fromshare() -- create a socket object from data received from socket.share() [*]
+gethostname() -- return the current hostname
+gethostbyname() -- map a hostname to its IP number
+gethostbyaddr() -- map an IP number or hostname to DNS info
+getservbyname() -- map a service name and a protocol name to a port number
+getprotobyname() -- map a protocol name (e.g. 'tcp') to a number
+ntohs(), ntohl() -- convert 16, 32 bit int from network to host byte order
+htons(), htonl() -- convert 16, 32 bit int from host to network byte order
+inet_aton() -- convert IP addr string (123.45.67.89) to 32-bit packed format
+inet_ntoa() -- convert 32-bit packed format IP to string (123.45.67.89)
+socket.getdefaulttimeout() -- get the default timeout value
+socket.setdefaulttimeout() -- set the default timeout value
+create_connection() -- connects to an address, with an optional timeout and
+                       optional source address.
+create_server() -- create a TCP socket and bind it to a specified address.
+
+ [*] not available on all platforms!
+
+Special objects:
+
+SocketType -- type object for socket objects
+error -- exception raised for I/O errors
+has_ipv6 -- boolean value indicating if IPv6 is supported
+
+IntEnum constants:
+
+AF_INET, AF_UNIX -- socket domains (first argument to socket() call)
+SOCK_STREAM, SOCK_DGRAM, SOCK_RAW -- socket types (second argument)
+
+Integer constants:
+
+Many other constants may be defined; these may be used in calls to
+the setsockopt() and getsockopt() methods.
+"""
+
+import _socket
+from _socket import *
+
+import os, sys, io, selectors
+from enum import IntEnum, IntFlag
+
+try:
+    import errno
+except ImportError:
+    errno = None
+EBADF = getattr(errno, 'EBADF', 9)
+EAGAIN = getattr(errno, 'EAGAIN', 11)
+EWOULDBLOCK = getattr(errno, 'EWOULDBLOCK', 11)
+
+__all__ = ["fromfd", "getfqdn", "create_connection", "create_server",
+           "has_dualstack_ipv6", "AddressFamily", "SocketKind"]
+__all__.extend(os._get_exports_list(_socket))
+
+# Set up the socket.AF_* socket.SOCK_* constants as members of IntEnums for
+# nicer string representations.
+# Note that _socket only knows about the integer values. The public interface
+# in this module understands the enums and translates them back from integers
+# where needed (e.g. .family property of a socket object).
+
+IntEnum._convert_(
+        'AddressFamily',
+        __name__,
+        lambda C: C.isupper() and C.startswith('AF_'))
+
+IntEnum._convert_(
+        'SocketKind',
+        __name__,
+        lambda C: C.isupper() and C.startswith('SOCK_'))
+
+IntFlag._convert_(
+        'MsgFlag',
+        __name__,
+        lambda C: C.isupper() and C.startswith('MSG_'))
+
+IntFlag._convert_(
+        'AddressInfo',
+        __name__,
+        lambda C: C.isupper() and C.startswith('AI_'))
+
+_LOCALHOST    = '127.0.0.1'
+_LOCALHOST_V6 = '::1'
+
+
+def _intenum_converter(value, enum_klass):
+    """Convert a numeric family value to an IntEnum member.
+
+    If it's not a known member, return the numeric value itself.
+    """
+    try:
+        return enum_klass(value)
+    except ValueError:
+        return value
+
+
+# WSA error codes
+if sys.platform.lower().startswith("win"):
+    errorTab = {}
+    errorTab[6] = "Specified event object handle is invalid."
+    errorTab[8] = "Insufficient memory available."
+    errorTab[87] = "One or more parameters are invalid."
+    errorTab[995] = "Overlapped operation aborted."
+    errorTab[996] = "Overlapped I/O event object not in signaled state."
+    errorTab[997] = "Overlapped operation will complete later."
+    errorTab[10004] = "The operation was interrupted."
+    errorTab[10009] = "A bad file handle was passed."
+    errorTab[10013] = "Permission denied."
+    errorTab[10014] = "A fault occurred on the network??"  # WSAEFAULT
+    errorTab[10022] = "An invalid operation was attempted."
+    errorTab[10024] = "Too many open files."
+    errorTab[10035] = "The socket operation would block."
+    errorTab[10036] = "A blocking operation is already in progress."
+    errorTab[10037] = "Operation already in progress."
+    errorTab[10038] = "Socket operation on nonsocket."
+    errorTab[10039] = "Destination address required."
+    errorTab[10040] = "Message too long."
+    errorTab[10041] = "Protocol wrong type for socket."
+    errorTab[10042] = "Bad protocol option."
+    errorTab[10043] = "Protocol not supported."
+    errorTab[10044] = "Socket type not supported."
+    errorTab[10045] = "Operation not supported."
+    errorTab[10046] = "Protocol family not supported."
+    errorTab[10047] = "Address family not supported by protocol family."
+    errorTab[10048] = "The network address is in use."
+    errorTab[10049] = "Cannot assign requested address."
+    errorTab[10050] = "Network is down."
+    errorTab[10051] = "Network is unreachable."
+    errorTab[10052] = "Network dropped connection on reset."
+    errorTab[10053] = "Software caused connection abort."
+    errorTab[10054] = "The connection has been reset."
+    errorTab[10055] = "No buffer space available."
+    errorTab[10056] = "Socket is already connected."
+    errorTab[10057] = "Socket is not connected."
+    errorTab[10058] = "The network has been shut down."
+    errorTab[10059] = "Too many references."
+    errorTab[10060] = "The operation timed out."
+    errorTab[10061] = "Connection refused."
+    errorTab[10062] = "Cannot translate name."
+    errorTab[10063] = "The name is too long."
+    errorTab[10064] = "The host is down."
+    errorTab[10065] = "The host is unreachable."
+    errorTab[10066] = "Directory not empty."
+    errorTab[10067] = "Too many processes."
+    errorTab[10068] = "User quota exceeded."
+    errorTab[10069] = "Disk quota exceeded."
+    errorTab[10070] = "Stale file handle reference."
+    errorTab[10071] = "Item is remote."
+    errorTab[10091] = "Network subsystem is unavailable."
+    errorTab[10092] = "Winsock.dll version out of range."
+    errorTab[10093] = "Successful WSAStartup not yet performed."
+    errorTab[10101] = "Graceful shutdown in progress."
+    errorTab[10102] = "No more results from WSALookupServiceNext."
+    errorTab[10103] = "Call has been canceled."
+    errorTab[10104] = "Procedure call table is invalid."
+    errorTab[10105] = "Service provider is invalid."
+    errorTab[10106] = "Service provider failed to initialize."
+    errorTab[10107] = "System call failure."
+    errorTab[10108] = "Service not found."
+    errorTab[10109] = "Class type not found."
+    errorTab[10110] = "No more results from WSALookupServiceNext."
+    errorTab[10111] = "Call was canceled."
+    errorTab[10112] = "Database query was refused."
+    errorTab[11001] = "Host not found."
+    errorTab[11002] = "Nonauthoritative host not found."
+    errorTab[11003] = "This is a nonrecoverable error."
+    errorTab[11004] = "Valid name, no data record requested type."
+    errorTab[11005] = "QoS receivers."
+    errorTab[11006] = "QoS senders."
+    errorTab[11007] = "No QoS senders."
+    errorTab[11008] = "QoS no receivers."
+    errorTab[11009] = "QoS request confirmed."
+    errorTab[11010] = "QoS admission error."
+    errorTab[11011] = "QoS policy failure."
+    errorTab[11012] = "QoS bad style."
+    errorTab[11013] = "QoS bad object."
+    errorTab[11014] = "QoS traffic control error."
+    errorTab[11015] = "QoS generic error."
+    errorTab[11016] = "QoS service type error."
+    errorTab[11017] = "QoS flowspec error."
+    errorTab[11018] = "Invalid QoS provider buffer."
+    errorTab[11019] = "Invalid QoS filter style."
+    errorTab[11020] = "Invalid QoS filter style."
+    errorTab[11021] = "Incorrect QoS filter count."
+    errorTab[11022] = "Invalid QoS object length."
+    errorTab[11023] = "Incorrect QoS flow count."
+    errorTab[11024] = "Unrecognized QoS object."
+    errorTab[11025] = "Invalid QoS policy object."
+    errorTab[11026] = "Invalid QoS flow descriptor."
+    errorTab[11027] = "Invalid QoS provider-specific flowspec."
+    errorTab[11028] = "Invalid QoS provider-specific filterspec."
+    errorTab[11029] = "Invalid QoS shape discard mode object."
+    errorTab[11030] = "Invalid QoS shaping rate object."
+    errorTab[11031] = "Reserved policy QoS element type."
+    __all__.append("errorTab")
+
+
+class _GiveupOnSendfile(Exception): pass
+
+
+class socket(_socket.socket):
+
+    """A subclass of _socket.socket adding the makefile() method."""
+
+    __slots__ = ["__weakref__", "_io_refs", "_closed"]
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+        _socket.socket.__init__(self, family, type, proto, fileno)
+        self._io_refs = 0
+        self._closed = False
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        if not self._closed:
+            self.close()
+
+    def __repr__(self):
+        """Wrap __repr__() to reveal the real class name and socket
+        address(es).
+        """
+        closed = getattr(self, '_closed', False)
+        s = "<%s.%s%s fd=%i, family=%s, type=%s, proto=%i" \
+            % (self.__class__.__module__,
+               self.__class__.__qualname__,
+               " [closed]" if closed else "",
+               self.fileno(),
+               self.family,
+               self.type,
+               self.proto)
+        if not closed:
+            # getsockname and getpeername may not be available on WASI.
+            try:
+                laddr = self.getsockname()
+                if laddr:
+                    s += ", laddr=%s" % str(laddr)
+            except (error, AttributeError):
+                pass
+            try:
+                raddr = self.getpeername()
+                if raddr:
+                    s += ", raddr=%s" % str(raddr)
+            except (error, AttributeError):
+                pass
+        s += '>'
+        return s
+
+    def __getstate__(self):
+        raise TypeError(f"cannot pickle {self.__class__.__name__!r} object")
+
+    def dup(self):
+        """dup() -> socket object
+
+        Duplicate the socket. Return a new socket object connected to the same
+        system resource. The new socket is non-inheritable.
+        """
+        fd = dup(self.fileno())
+        sock = self.__class__(self.family, self.type, self.proto, fileno=fd)
+        sock.settimeout(self.gettimeout())
+        return sock
+
+    def accept(self):
+        """accept() -> (socket object, address info)
+
+        Wait for an incoming connection.  Return a new socket
+        representing the connection, and the address of the client.
+        For IP sockets, the address info is a pair (hostaddr, port).
+        """
+        fd, addr = self._accept()
+        sock = socket(self.family, self.type, self.proto, fileno=fd)
+        # Issue #7995: if no default timeout is set and the listening
+        # socket had a (non-zero) timeout, force the new socket in blocking
+        # mode to override platform-specific socket flags inheritance.
+        if getdefaulttimeout() is None and self.gettimeout():
+            sock.setblocking(True)
+        return sock, addr
+
+    def makefile(self, mode="r", buffering=None, *,
+                 encoding=None, errors=None, newline=None):
+        """makefile(...) -> an I/O stream connected to the socket
+
+        The arguments are as for io.open() after the filename, except the only
+        supported mode values are 'r' (default), 'w', 'b', or a combination of
+        those.
+        """
+        # XXX refactor to share code?
+        if not set(mode) <= {"r", "w", "b"}:
+            raise ValueError("invalid mode %r (only r, w, b allowed)" % (mode,))
+        writing = "w" in mode
+        reading = "r" in mode or not writing
+        assert reading or writing
+        binary = "b" in mode
+        rawmode = ""
+        if reading:
+            rawmode += "r"
+        if writing:
+            rawmode += "w"
+        raw = SocketIO(self, rawmode)
+        self._io_refs += 1
+        if buffering is None:
+            buffering = -1
+        if buffering < 0:
+            buffering = io.DEFAULT_BUFFER_SIZE
+        if buffering == 0:
+            if not binary:
+                raise ValueError("unbuffered streams must be binary")
+            return raw
+        if reading and writing:
+            buffer = io.BufferedRWPair(raw, raw, buffering)
+        elif reading:
+            buffer = io.BufferedReader(raw, buffering)
+        else:
+            assert writing
+            buffer = io.BufferedWriter(raw, buffering)
+        if binary:
+            return buffer
+        encoding = io.text_encoding(encoding)
+        text = io.TextIOWrapper(buffer, encoding, errors, newline)
+        text.mode = mode
+        return text
+
+    if hasattr(os, 'sendfile'):
+
+        def _sendfile_use_sendfile(self, file, offset=0, count=None):
+            self._check_sendfile_params(file, offset, count)
+            sockno = self.fileno()
+            try:
+                fileno = file.fileno()
+            except (AttributeError, io.UnsupportedOperation) as err:
+                raise _GiveupOnSendfile(err)  # not a regular file
+            try:
+                fsize = os.fstat(fileno).st_size
+            except OSError as err:
+                raise _GiveupOnSendfile(err)  # not a regular file
+            if not fsize:
+                return 0  # empty file
+            # Truncate to 1GiB to avoid OverflowError, see bpo-38319.
+            blocksize = min(count or fsize, 2 ** 30)
+            timeout = self.gettimeout()
+            if timeout == 0:
+                raise ValueError("non-blocking sockets are not supported")
+            # poll/select have the advantage of not requiring any
+            # extra file descriptor, contrarily to epoll/kqueue
+            # (also, they require a single syscall).
+            if hasattr(selectors, 'PollSelector'):
+                selector = selectors.PollSelector()
+            else:
+                selector = selectors.SelectSelector()
+            selector.register(sockno, selectors.EVENT_WRITE)
+
+            total_sent = 0
+            # localize variable access to minimize overhead
+            selector_select = selector.select
+            os_sendfile = os.sendfile
+            try:
+                while True:
+                    if timeout and not selector_select(timeout):
+                        raise TimeoutError('timed out')
+                    if count:
+                        blocksize = min(count - total_sent, blocksize)
+                        if blocksize <= 0:
+                            break
+                    try:
+                        sent = os_sendfile(sockno, fileno, offset, blocksize)
+                    except BlockingIOError:
+                        if not timeout:
+                            # Block until the socket is ready to send some
+                            # data; avoids hogging CPU resources.
+                            selector_select()
+                        continue
+                    except OSError as err:
+                        if total_sent == 0:
+                            # We can get here for different reasons, the main
+                            # one being 'file' is not a regular mmap(2)-like
+                            # file, in which case we'll fall back on using
+                            # plain send().
+                            raise _GiveupOnSendfile(err)
+                        raise err from None
+                    else:
+                        if sent == 0:
+                            break  # EOF
+                        offset += sent
+                        total_sent += sent
+                return total_sent
+            finally:
+                if total_sent > 0 and hasattr(file, 'seek'):
+                    file.seek(offset)
+    else:
+        def _sendfile_use_sendfile(self, file, offset=0, count=None):
+            raise _GiveupOnSendfile(
+                "os.sendfile() not available on this platform")
+
+    def _sendfile_use_send(self, file, offset=0, count=None):
+        self._check_sendfile_params(file, offset, count)
+        if self.gettimeout() == 0:
+            raise ValueError("non-blocking sockets are not supported")
+        if offset:
+            file.seek(offset)
+        blocksize = min(count, 8192) if count else 8192
+        total_sent = 0
+        # localize variable access to minimize overhead
+        file_read = file.read
+        sock_send = self.send
+        try:
+            while True:
+                if count:
+                    blocksize = min(count - total_sent, blocksize)
+                    if blocksize <= 0:
+                        break
+                data = memoryview(file_read(blocksize))
+                if not data:
+                    break  # EOF
+                while True:
+                    try:
+                        sent = sock_send(data)
+                    except BlockingIOError:
+                        continue
+                    else:
+                        total_sent += sent
+                        if sent < len(data):
+                            data = data[sent:]
+                        else:
+                            break
+            return total_sent
+        finally:
+            if total_sent > 0 and hasattr(file, 'seek'):
+                file.seek(offset + total_sent)
+
+    def _check_sendfile_params(self, file, offset, count):
+        if 'b' not in getattr(file, 'mode', 'b'):
+            raise ValueError("file should be opened in binary mode")
+        if not self.type & SOCK_STREAM:
+            raise ValueError("only SOCK_STREAM type sockets are supported")
+        if count is not None:
+            if not isinstance(count, int):
+                raise TypeError(
+                    "count must be a positive integer (got {!r})".format(count))
+            if count <= 0:
+                raise ValueError(
+                    "count must be a positive integer (got {!r})".format(count))
+
+    def sendfile(self, file, offset=0, count=None):
+        """sendfile(file[, offset[, count]]) -> sent
+
+        Send a file until EOF is reached by using high-performance
+        os.sendfile() and return the total number of bytes which
+        were sent.
+        *file* must be a regular file object opened in binary mode.
+        If os.sendfile() is not available (e.g. Windows) or file is
+        not a regular file socket.send() will be used instead.
+        *offset* tells from where to start reading the file.
+        If specified, *count* is the total number of bytes to transmit
+        as opposed to sending the file until EOF is reached.
+        File position is updated on return or also in case of error in
+        which case file.tell() can be used to figure out the number of
+        bytes which were sent.
+        The socket must be of SOCK_STREAM type.
+        Non-blocking sockets are not supported.
+        """
+        try:
+            return self._sendfile_use_sendfile(file, offset, count)
+        except _GiveupOnSendfile:
+            return self._sendfile_use_send(file, offset, count)
+
+    def _decref_socketios(self):
+        if self._io_refs > 0:
+            self._io_refs -= 1
+        if self._closed:
+            self.close()
+
+    def _real_close(self, _ss=_socket.socket):
+        # This function should not reference any globals. See issue #808164.
+        _ss.close(self)
+
+    def close(self):
+        # This function should not reference any globals. See issue #808164.
+        self._closed = True
+        if self._io_refs <= 0:
+            self._real_close()
+
+    def detach(self):
+        """detach() -> file descriptor
+
+        Close the socket object without closing the underlying file descriptor.
+        The object cannot be used after this call, but the file descriptor
+        can be reused for other purposes.  The file descriptor is returned.
+        """
+        self._closed = True
+        return super().detach()
+
+    @property
+    def family(self):
+        """Read-only access to the address family for this socket.
+        """
+        return _intenum_converter(super().family, AddressFamily)
+
+    @property
+    def type(self):
+        """Read-only access to the socket type.
+        """
+        return _intenum_converter(super().type, SocketKind)
+
+    if os.name == 'nt':
+        def get_inheritable(self):
+            return os.get_handle_inheritable(self.fileno())
+        def set_inheritable(self, inheritable):
+            os.set_handle_inheritable(self.fileno(), inheritable)
+    else:
+        def get_inheritable(self):
+            return os.get_inheritable(self.fileno())
+        def set_inheritable(self, inheritable):
+            os.set_inheritable(self.fileno(), inheritable)
+    get_inheritable.__doc__ = "Get the inheritable flag of the socket"
+    set_inheritable.__doc__ = "Set the inheritable flag of the socket"
+
+def fromfd(fd, family, type, proto=0):
+    """ fromfd(fd, family, type[, proto]) -> socket object
+
+    Create a socket object from a duplicate of the given file
+    descriptor.  The remaining arguments are the same as for socket().
+    """
+    nfd = dup(fd)
+    return socket(family, type, proto, nfd)
+
+if hasattr(_socket.socket, "sendmsg"):
+    import array
+
+    def send_fds(sock, buffers, fds, flags=0, address=None):
+        """ send_fds(sock, buffers, fds[, flags[, address]]) -> integer
+
+        Send the list of file descriptors fds over an AF_UNIX socket.
+        """
+        return sock.sendmsg(buffers, [(_socket.SOL_SOCKET,
+            _socket.SCM_RIGHTS, array.array("i", fds))])
+    __all__.append("send_fds")
+
+if hasattr(_socket.socket, "recvmsg"):
+    import array
+
+    def recv_fds(sock, bufsize, maxfds, flags=0):
+        """ recv_fds(sock, bufsize, maxfds[, flags]) -> (data, list of file
+        descriptors, msg_flags, address)
+
+        Receive up to maxfds file descriptors returning the message
+        data and a list containing the descriptors.
+        """
+        # Array of ints
+        fds = array.array("i")
+        msg, ancdata, flags, addr = sock.recvmsg(bufsize,
+            _socket.CMSG_LEN(maxfds * fds.itemsize))
+        for cmsg_level, cmsg_type, cmsg_data in ancdata:
+            if (cmsg_level == _socket.SOL_SOCKET and cmsg_type == _socket.SCM_RIGHTS):
+                fds.frombytes(cmsg_data[:
+                        len(cmsg_data) - (len(cmsg_data) % fds.itemsize)])
+
+        return msg, list(fds), flags, addr
+    __all__.append("recv_fds")
+
+if hasattr(_socket.socket, "share"):
+    def fromshare(info):
+        """ fromshare(info) -> socket object
+
+        Create a socket object from the bytes object returned by
+        socket.share(pid).
+        """
+        return socket(0, 0, 0, info)
+    __all__.append("fromshare")
+
+# Origin: https://gist.github.com/4325783, by Geert Jansen.  Public domain.
+# This is used if _socket doesn't natively provide socketpair. It's
+# always defined so that it can be patched in for testing purposes.
+def _fallback_socketpair(family=AF_INET, type=SOCK_STREAM, proto=0):
+    if family == AF_INET:
+        host = _LOCALHOST
+    elif family == AF_INET6:
+        host = _LOCALHOST_V6
+    else:
+        raise ValueError("Only AF_INET and AF_INET6 socket address families "
+                         "are supported")
+    if type != SOCK_STREAM:
+        raise ValueError("Only SOCK_STREAM socket type is supported")
+    if proto != 0:
+        raise ValueError("Only protocol zero is supported")
+
+    # We create a connected TCP socket. Note the trick with
+    # setblocking(False) that prevents us from having to create a thread.
+    lsock = socket(family, type, proto)
+    try:
+        lsock.bind((host, 0))
+        lsock.listen()
+        # On IPv6, ignore flow_info and scope_id
+        addr, port = lsock.getsockname()[:2]
+        csock = socket(family, type, proto)
+        try:
+            csock.setblocking(False)
+            try:
+                csock.connect((addr, port))
+            except (BlockingIOError, InterruptedError):
+                pass
+            csock.setblocking(True)
+            ssock, _ = lsock.accept()
+        except:
+            csock.close()
+            raise
+    finally:
+        lsock.close()
+
+    # Authenticating avoids using a connection from something else
+    # able to connect to {host}:{port} instead of us.
+    # We expect only AF_INET and AF_INET6 families.
+    try:
+        if (
+            ssock.getsockname() != csock.getpeername()
+            or csock.getsockname() != ssock.getpeername()
+        ):
+            raise ConnectionError("Unexpected peer connection")
+    except:
+        # getsockname() and getpeername() can fail
+        # if either socket isn't connected.
+        ssock.close()
+        csock.close()
+        raise
+
+    return (ssock, csock)
+
+if hasattr(_socket, "socketpair"):
+    def socketpair(family=None, type=SOCK_STREAM, proto=0):
+        if family is None:
+            try:
+                family = AF_UNIX
+            except NameError:
+                family = AF_INET
+        a, b = _socket.socketpair(family, type, proto)
+        a = socket(family, type, proto, a.detach())
+        b = socket(family, type, proto, b.detach())
+        return a, b
+
+else:
+    socketpair = _fallback_socketpair
+    __all__.append("socketpair")
+
+socketpair.__doc__ = """socketpair([family[, type[, proto]]]) -> (socket object, socket object)
+Create a pair of socket objects from the sockets returned by the platform
+socketpair() function.
+The arguments are the same as for socket() except the default family is AF_UNIX
+if defined on the platform; otherwise, the default is AF_INET.
+"""
+
+_blocking_errnos = { EAGAIN, EWOULDBLOCK }
+
+class SocketIO(io.RawIOBase):
+
+    """Raw I/O implementation for stream sockets.
+
+    This class supports the makefile() method on sockets.  It provides
+    the raw I/O interface on top of a socket object.
+    """
+
+    # One might wonder why not let FileIO do the job instead.  There are two
+    # main reasons why FileIO is not adapted:
+    # - it wouldn't work under Windows (where you can't used read() and
+    #   write() on a socket handle)
+    # - it wouldn't work with socket timeouts (FileIO would ignore the
+    #   timeout and consider the socket non-blocking)
+
+    # XXX More docs
+
+    def __init__(self, sock, mode):
+        if mode not in ("r", "w", "rw", "rb", "wb", "rwb"):
+            raise ValueError("invalid mode: %r" % mode)
+        io.RawIOBase.__init__(self)
+        self._sock = sock
+        if "b" not in mode:
+            mode += "b"
+        self._mode = mode
+        self._reading = "r" in mode
+        self._writing = "w" in mode
+        self._timeout_occurred = False
+
+    def readinto(self, b):
+        """Read up to len(b) bytes into the writable buffer *b* and return
+        the number of bytes read.  If the socket is non-blocking and no bytes
+        are available, None is returned.
+
+        If *b* is non-empty, a 0 return value indicates that the connection
+        was shutdown at the other end.
+        """
+        self._checkClosed()
+        self._checkReadable()
+        if self._timeout_occurred:
+            raise OSError("cannot read from timed out object")
+        while True:
+            try:
+                return self._sock.recv_into(b)
+            except timeout:
+                self._timeout_occurred = True
+                raise
+            except error as e:
+                if e.errno in _blocking_errnos:
+                    return None
+                raise
+
+    def write(self, b):
+        """Write the given bytes or bytearray object *b* to the socket
+        and return the number of bytes written.  This can be less than
+        len(b) if not all data could be written.  If the socket is
+        non-blocking and no bytes could be written None is returned.
+        """
+        self._checkClosed()
+        self._checkWritable()
+        try:
+            return self._sock.send(b)
+        except error as e:
+            # XXX what about EINTR?
+            if e.errno in _blocking_errnos:
+                return None
+            raise
+
+    def readable(self):
+        """True if the SocketIO is open for reading.
+        """
+        if self.closed:
+            raise ValueError("I/O operation on closed socket.")
+        return self._reading
+
+    def writable(self):
+        """True if the SocketIO is open for writing.
+        """
+        if self.closed:
+            raise ValueError("I/O operation on closed socket.")
+        return self._writing
+
+    def seekable(self):
+        """True if the SocketIO is open for seeking.
+        """
+        if self.closed:
+            raise ValueError("I/O operation on closed socket.")
+        return super().seekable()
+
+    def fileno(self):
+        """Return the file descriptor of the underlying socket.
+        """
+        self._checkClosed()
+        return self._sock.fileno()
+
+    @property
+    def name(self):
+        if not self.closed:
+            return self.fileno()
+        else:
+            return -1
+
+    @property
+    def mode(self):
+        return self._mode
+
+    def close(self):
+        """Close the SocketIO object.  This doesn't close the underlying
+        socket, except if all references to it have disappeared.
+        """
+        if self.closed:
+            return
+        io.RawIOBase.close(self)
+        self._sock._decref_socketios()
+        self._sock = None
+
+
+def getfqdn(name=''):
+    """Get fully qualified domain name from name.
+
+    An empty argument is interpreted as meaning the local host.
+
+    First the hostname returned by gethostbyaddr() is checked, then
+    possibly existing aliases. In case no FQDN is available and `name`
+    was given, it is returned unchanged. If `name` was empty, '0.0.0.0' or '::',
+    hostname from gethostname() is returned.
+    """
+    name = name.strip()
+    if not name or name in ('0.0.0.0', '::'):
+        name = gethostname()
+    try:
+        hostname, aliases, ipaddrs = gethostbyaddr(name)
+    except error:
+        pass
+    else:
+        aliases.insert(0, hostname)
+        for name in aliases:
+            if '.' in name:
+                break
+        else:
+            name = hostname
+    return name
+
+
+_GLOBAL_DEFAULT_TIMEOUT = object()
+
+def create_connection(address, timeout=_GLOBAL_DEFAULT_TIMEOUT,
+                      source_address=None, *, all_errors=False):
+    """Connect to *address* and return the socket object.
+
+    Convenience function.  Connect to *address* (a 2-tuple ``(host,
+    port)``) and return the socket object.  Passing the optional
+    *timeout* parameter will set the timeout on the socket instance
+    before attempting to connect.  If no *timeout* is supplied, the
+    global default timeout setting returned by :func:`getdefaulttimeout`
+    is used.  If *source_address* is set it must be a tuple of (host, port)
+    for the socket to bind as a source address before making the connection.
+    A host of '' or port 0 tells the OS to use the default. When a connection
+    cannot be created, raises the last error if *all_errors* is False,
+    and an ExceptionGroup of all errors if *all_errors* is True.
+    """
+
+    host, port = address
+    exceptions = []
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+        af, socktype, proto, canonname, sa = res
+        sock = None
+        try:
+            sock = socket(af, socktype, proto)
+            if timeout is not _GLOBAL_DEFAULT_TIMEOUT:
+                sock.settimeout(timeout)
+            if source_address:
+                sock.bind(source_address)
+            sock.connect(sa)
+            # Break explicitly a reference cycle
+            exceptions.clear()
+            return sock
+
+        except error as exc:
+            if not all_errors:
+                exceptions.clear()  # raise only the last error
+            exceptions.append(exc)
+            if sock is not None:
+                sock.close()
+
+    if len(exceptions):
+        try:
+            if not all_errors:
+                raise exceptions[0]
+            raise ExceptionGroup("create_connection failed", exceptions)
+        finally:
+            # Break explicitly a reference cycle
+            exceptions.clear()
+    else:
+        raise error("getaddrinfo returns an empty list")
+
+
+def has_dualstack_ipv6():
+    """Return True if the platform supports creating a SOCK_STREAM socket
+    which can handle both AF_INET and AF_INET6 (IPv4 / IPv6) connections.
+    """
+    if not has_ipv6 \
+            or not hasattr(_socket, 'IPPROTO_IPV6') \
+            or not hasattr(_socket, 'IPV6_V6ONLY'):
+        return False
+    try:
+        with socket(AF_INET6, SOCK_STREAM) as sock:
+            sock.setsockopt(IPPROTO_IPV6, IPV6_V6ONLY, 0)
+            return True
+    except error:
+        return False
+
+
+def create_server(address, *, family=AF_INET, backlog=None, reuse_port=False,
+                  dualstack_ipv6=False):
+    """Convenience function which creates a SOCK_STREAM type socket
+    bound to *address* (a 2-tuple (host, port)) and return the socket
+    object.
+
+    *family* should be either AF_INET or AF_INET6.
+    *backlog* is the queue size passed to socket.listen().
+    *reuse_port* dictates whether to use the SO_REUSEPORT socket option.
+    *dualstack_ipv6*: if true and the platform supports it, it will
+    create an AF_INET6 socket able to accept both IPv4 or IPv6
+    connections. When false it will explicitly disable this option on
+    platforms that enable it by default (e.g. Linux).
+
+    >>> with create_server(('', 8000)) as server:
+    ...     while True:
+    ...         conn, addr = server.accept()
+    ...         # handle new connection
+    """
+    if reuse_port and not hasattr(_socket, "SO_REUSEPORT"):
+        raise ValueError("SO_REUSEPORT not supported on this platform")
+    if dualstack_ipv6:
+        if not has_dualstack_ipv6():
+            raise ValueError("dualstack_ipv6 not supported on this platform")
+        if family != AF_INET6:
+            raise ValueError("dualstack_ipv6 requires AF_INET6 family")
+    sock = socket(family, SOCK_STREAM)
+    try:
+        # Note about Windows. We don't set SO_REUSEADDR because:
+        # 1) It's unnecessary: bind() will succeed even in case of a
+        # previous closed socket on the same address and still in
+        # TIME_WAIT state.
+        # 2) If set, another socket is free to bind() on the same
+        # address, effectively preventing this one from accepting
+        # connections. Also, it may set the process in a state where
+        # it'll no longer respond to any signals or graceful kills.
+        # See: https://learn.microsoft.com/windows/win32/winsock/using-so-reuseaddr-and-so-exclusiveaddruse
+        if os.name not in ('nt', 'cygwin') and \
+                hasattr(_socket, 'SO_REUSEADDR'):
+            try:
+                sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+            except error:
+                # Fail later on bind(), for platforms which may not
+                # support this option.
+                pass
+        if reuse_port:
+            sock.setsockopt(SOL_SOCKET, SO_REUSEPORT, 1)
+        if has_ipv6 and family == AF_INET6:
+            if dualstack_ipv6:
+                sock.setsockopt(IPPROTO_IPV6, IPV6_V6ONLY, 0)
+            elif hasattr(_socket, "IPV6_V6ONLY") and \
+                    hasattr(_socket, "IPPROTO_IPV6"):
+                sock.setsockopt(IPPROTO_IPV6, IPV6_V6ONLY, 1)
+        try:
+            sock.bind(address)
+        except error as err:
+            msg = '%s (while attempting to bind on address %r)' % \
+                (err.strerror, address)
+            raise error(err.errno, msg) from None
+        if backlog is None:
+            sock.listen()
+        else:
+            sock.listen(backlog)
+        return sock
+    except error:
+        sock.close()
+        raise
+
+
+def getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+    """Resolve host and port into list of address info entries.
+
+    Translate the host/port argument into a sequence of 5-tuples that contain
+    all the necessary arguments for creating a socket connected to that service.
+    host is a domain name, a string representation of an IPv4/v6 address or
+    None. port is a string service name such as 'http', a numeric port number or
+    None. By passing None as the value of host and port, you can pass NULL to
+    the underlying C API.
+
+    The family, type and proto arguments can be optionally specified in order to
+    narrow the list of addresses returned. Passing zero as a value for each of
+    these arguments selects the full range of results.
+    """
+    # We override this function since we want to translate the numeric family
+    # and socket type values to enum constants.
+    addrlist = []
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+        af, socktype, proto, canonname, sa = res
+        addrlist.append((_intenum_converter(af, AddressFamily),
+                         _intenum_converter(socktype, SocketKind),
+                         proto, canonname, sa))
+    return addrlist
